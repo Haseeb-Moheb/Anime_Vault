@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -16,9 +16,9 @@ function LoadMore() {
 
   useEffect(() => {
     if(inView) {
-      fetchAnime(2)
+      fetchAnime(page)
       .then((res) => {
-        setData([...data, ...res])
+        setData([...data, ...res]);
         page++;
       });
         }

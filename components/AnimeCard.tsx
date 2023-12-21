@@ -21,7 +21,7 @@ interface Prop {
 const variants = {
   hidden: { opacity: 0},
   visibale: { opacity: 1},
-};
+}
 
 function AnimeCard({ anime, index }: Prop) {
   return (
